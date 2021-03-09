@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#topoEsquerda {
+    border-top: 220px solid teal;
+    border-right: 150px solid transparent;
+    margin-right: -40px;
+    width: 100%;
+    height: 0;
+}
+
+#topoDireita {
+    border-bottom: 220px solid gray;
+    border-left: 150px solid transparent;
+    margin-left: -40px;
+    width: 100%;
+    height: 0;
+}
+
+#topoCentro {
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+    position: absolute;
+    top: 5px;
+    left: 40%;
+    right: 40%;
+}
