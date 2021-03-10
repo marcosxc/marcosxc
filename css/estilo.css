@@ -20,14 +20,22 @@ header {
     margin-right: -40px;
     width: 50%;
     height: 0;
+    color: white;
+    font-size: 1.2em;
 }
 
-#topoEsquerda p {
+#topoEsquerda h1 {
     position: absolute;
     top: 5%;
-    left: 3%;
-    font-size: 2.5em;
-    color: white;
+    left: 4%;
+    /* font-size: 2.5em; */
+    /* color: white; */
+}
+
+#topoEsquerda h3 {
+    position: absolute;
+    top: 12%;
+    left: 10%
 }
 
 #topoDireita {
@@ -45,22 +53,27 @@ header {
     position: relative;
     align-content: center;
     top: 150px;
-    left: 200px;
+    left: 260px;
 }
 
 #topoDireita img:hover {
-    top: 140px;
+    border-radius: 25px;
+    top: 145px;
     transition: 0.5s;
 }
 
-#topoCentro {
+#fotoTeste {
     width: 200px;
     height: 200px;
-    border: 5px solid white;
+    border-left: 5px solid gray;
+    border-right: 5px solid teal;
     border-radius: 50%;
-    overflow: hidden;
-    margin: 10px;
     position: absolute;
-    left: 40%;
-    right: 340%;
+    top: 2%;
+    left: 41%;
+}
+
+#fotoTeste:hover {
+    transform: rotateY(180deg);
+    transition: 0.5s;
 }
