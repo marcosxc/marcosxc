@@ -5,9 +5,12 @@
 body {
     width: 1200px;
     margin: auto;
+    
 }
 
 header {
+    /* margin-top: 1px; */
+    /* border-radius: 20px 20px 0px 0px; */
     /* background: linear-gradient(10deg, teal, gray); */
     background: radial-gradient(gray, teal);
     display: flex;
@@ -51,6 +54,9 @@ header {
 
 #fotoPerfil {
     background-image: url("../img/perfil-pequeno.jpg");
+    background-size: 200px;
+    background-position-x: center;
+    background-position-y: center;
     border: 5px solid silver;
     border-radius: 50%;
     width: 200px;
@@ -62,7 +68,7 @@ header {
 
 #fotoPerfil:hover {
     transform: rotateY(180deg);
-    transition: 1s;
+    transition: 2s;
     background-image: url("../img/perfil-pequeno-dois.jpg");
     background-position: center;
     background-repeat: no-repeat;
