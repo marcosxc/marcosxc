@@ -3,64 +3,69 @@
 }
 
 body {
-    width: 1280px;
+    width: 1200px;
     margin: auto;
 }
 
 header {
+    /* background: linear-gradient(10deg, teal, gray); */
+    background: radial-gradient(gray, teal);
     display: flex;
-    margin: auto;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    position: static;
+    color: whitesmoke;
 }
 
-#topoEsquerda {
-    border-top: 220px solid teal;
-    border-right: 150px solid transparent;
-    margin-right: -40px;
-    width: 50%;
-    height: 0;
+#nome {
+    font-size: 2em;
+    margin-left: 50px;
+    margin-bottom: 0px;
 }
 
-#topoEsquerda p {
-    position: absolute;
-    top: 5%;
-    left: 3%;
-    font-size: 2.5em;
-    color: white;
+#profissao {
+    font-size: 1em;
+    margin-left: 50px;
+    margin-top: 0px;
+    padding-right: 10px;
 }
 
-#topoDireita {
-    border-bottom: 220px solid gray;
-    border-left: 150px solid transparent;
-    margin-left: -40px;
-    width: 50%;
-    height: 0;
-}
-
-#topoDireita img {
+#redesSociais img {
     width: 40px;
     height: 40px;
-    margin: 4px;
+    margin: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
     position: relative;
-    align-content: center;
-    top: 150px;
-    left: 200px;
+    top: 90px;
+    right: 50px;
 }
 
-#topoDireita img:hover {
-    top: 140px;
+#redesSociais img:hover {
+    border-radius: 50%;
     transition: 0.5s;
+    top: 85px;
+    border: 1px solid gray;
 }
 
-#topoCentro {
+#fotoPerfil {
+    background-image: url("../img/perfil-pequeno.jpg");
+    border: 5px solid silver;
+    border-radius: 50%;
     width: 200px;
     height: 200px;
-    border: 5px solid white;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 10px;
-    position: absolute;
-    left: 40%;
-    right: 340%;
+    position: relative;
+    left: -90px;
+    
+}
+
+#fotoPerfil:hover {
+    transform: rotateY(180deg);
+    transition: 1s;
+    background-image: url("../img/perfil-pequeno-dois.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    border-color: teal;
 }
