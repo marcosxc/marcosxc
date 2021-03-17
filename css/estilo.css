@@ -89,3 +89,15 @@ header span:first-child {
     margin-top: 0px;
     border: 1px solid gray;
 }
+
+footer {
+    background-color: #283643;
+    padding-bottom: 10px;
+}
+
+footer p {
+    margin: 0px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #7992a7;
+}
