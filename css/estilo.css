@@ -55,6 +55,7 @@ header span:first-child {
     height: 200px;
     margin: auto;
     margin-top: -160px;
+    animation: perfil 2s linear;  
 }
 
 #fotoPerfil:hover {
@@ -64,7 +65,7 @@ header span:first-child {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 200px;
-    border-color: whitesmoke;
+    border-color: whitesmoke;  
 }
 
 #redesSociais {
@@ -124,10 +125,16 @@ body article h3 img {
     to {margin-bottom: 0px; height: 250px;}
 }
 
+@keyframes perfil {
+    from {height: 0px; width: 0px}
+    to {height: 200px; width: 200px;}
+}
+
 @keyframes subTituloFundo {
     from {margin-right: 980px;}
     to {margin-right: 0px}
 }
+
 
 /* @keyframes subTitulo {
     from {width: 0px; height: 0px;}
