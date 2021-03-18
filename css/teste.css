@@ -35,7 +35,7 @@ header div {
 
 @keyframes atom {
     from { transform: none; }
-    to { transform: translateY(-10px); }
+    to { transform: translateY(-100px); }
 }
 @keyframes electron-circle1 {
 from { transform: rotateY(70deg) rotateZ(20deg); }
@@ -142,5 +142,5 @@ article {
 
 iframe {
     width: 1280px;
-    
+
 }

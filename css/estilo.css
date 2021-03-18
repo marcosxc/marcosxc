@@ -101,3 +101,29 @@ footer p {
     font-size: 0.8em;
     color: #7992a7;
 }
+
+body article h3 {
+    color: #293744;
+    background-image: linear-gradient(to left,  rgba(244, 246, 248, 0.404), #668dac49, #fff) ;    
+    display: flex;
+    align-items: center;
+    animation: subTituloFundo 1.5s linear;
+}
+
+body article h3 img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    margin-right: 15px;
+    animation: subTitulo 0.5s linear;
+}
+
+@keyframes subTituloFundo {
+    from {margin-right: 980px;}
+    to {margin-right: 0px}
+}
+
+@keyframes subTitulo {
+    from {width: 0px; height: 0px;}
+    to {width: 30px; height: 30px;}
+}
