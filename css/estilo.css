@@ -15,7 +15,7 @@ header {
     background-position-x: center;
     height: 250px;
     color: white;
-    animation: capa 2s linear;
+    animation: capa 1s linear;
 }
 
 header span:first-child {
@@ -55,7 +55,7 @@ header span:first-child {
     height: 200px;
     margin: auto;
     margin-top: -160px;
-    animation: perfil 2s linear;  
+    animation: perfil 1s linear;  
 }
 
 #fotoPerfil:hover {
@@ -83,6 +83,7 @@ header span:first-child {
     margin: 2px;
     border: 1px solid rgba(0, 0, 0, 0.01);
     border-radius: 10px;
+    animation: redesSociais 1s linear;
 }
 
 #redesSociais img:hover {
@@ -109,7 +110,7 @@ body article h3 {
     background-image: linear-gradient(to left,  rgba(244, 246, 248, 0.404), #668dac49, #fff) ;    
     display: flex;
     align-items: center;
-    animation: subTituloFundo 2s linear;
+    animation: subTituloFundo 1s linear;
 }
 
 body article h3 img {
@@ -128,6 +129,11 @@ body article h3 img {
 @keyframes perfil {
     from {height: 0px; width: 0px}
     to {height: 200px; width: 200px;}
+}
+
+@keyframes redesSociais {
+    from {height: 0px; width: 0px;}
+    to {height: 40px; width: 40px;}
 }
 
 @keyframes subTituloFundo {
