@@ -1,151 +1,163 @@
 * {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: 'Orbitron', 'sans-serif';
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
     width: 1280px;
     margin: auto;
-    background-color: #1e1e1e;
-    color: #9aadb8;
+    background-color: rgba(23, 27, 38, 1);
+    background-image: url(/img/capa.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
 }
 
-header {
-    background: radial-gradient(gray, teal);
-    background-image: url("../img/capa.jpg");
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: center;
-    height: 250px;
+/* MENU */
+
+nav { 
+    position: fixed;
+    float: left;
+    top: 2px;
+    /*border: 1px solid blue; /* Item temporário para criação */
+    z-index: 999;
+}
+
+.menu {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin-top: 5px;
+    display: block;
+    justify-content: space-between;
+    /*border: 1px solid blue; /* Item temporário para criação */
+}
+
+.menu li{
+    list-style: none;
+    position: relative;
+    float: left;
+    /*border: 0.5px solid gray; /* Item temporário para criação */
+    width: 255.4px;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.menu li a {
+    color: #a074c4;
+    text-decoration: none;
+    /* margin: 5px 15px; */
+    padding: 5px 15px;
+    /* border-left: 1px solid #a074c4;
+    border-right: 1px solid #a074c4; */
+    display: block;
+    /*border: 1px solid yellow; /* Item temporário para criação */
+}
+
+.menu li a:hover {
+    background-color: rgba(51, 51, 51, 0.9);
     color: white;
-    animation: capa 1s linear;
 }
 
-header span:first-child {
-    /* border: 4px solid white; */
-    /* border-radius: 40px 0px 40px 0px; */
-    padding: 0px;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin: 0px;
-    margin-left: 30px;
-    margin-top: -60px;
-    height: 60px;
+.menu li ul {
+    width: 250px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.6s linear;
+    /*border: 1px solid mediumvioletred; /* Item temporário para criação */
 }
 
-#nome {
-    font-size: 2.3em;
-    margin-top: 80px;
-    margin-left: 30px;
-    margin-bottom: 0px;
+.menu li:hover ul {
+    visibility: visible;
+    opacity: 100;
 }
 
-#profissao {
-    font-size: 1.1em;
-    margin-left: 30px;
-    margin-top: 0px;
-    padding-right: 10px;
-}
-
-#fotoPerfil {
-    background-image: url("../img/perfil-pequeno.jpg");
-    background-size: 200px;
-    background-position-x: center;
-    background-position-y: center;
-    border: 5px solid silver;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    margin-top: -160px;
-    animation: perfil 1s linear;  
-}
-
-#fotoPerfil:hover {
-    transform: rotateY(180deg);
-    transition: 2s;
-    background-image: url("../img/perfil-pequeno-dois.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 200px;
-    border-color: whitesmoke;  
-}
-
-#redesSociais {
-    display: flex;
-    justify-content: flex-end;
-    width: 230px;
-    padding: 5px;
-    margin-top: -55px;
-    margin-left: 1000px;
-}
-
-#redesSociais img {
-    width: 40px;
-    height: 40px;
-    margin: 2px;
-    border: 1px solid rgba(0, 0, 0, 0.01);
-    border-radius: 10px;
-    animation: redesSociais 1s linear;
-}
-
-#redesSociais img:hover {
-    border-radius: 50%;
-    transition: 0.2s;
-    margin-top: 0px;
-    border: 1px solid gray;
-}
-
-footer {
-    background-color: #283643;
-    padding-bottom: 10px;
-}
-
-footer p {
-    margin: 0px;
-    text-align: center;
-    font-size: 0.8em;
-    color: #7992a7;
-}
-
-body article h3 {
-    color: #358cd6;
-    /* background-image: linear-gradient(to right, #151819, rgba(0, 30.2, 57.3 ), #283643, #283643) ;     */
-    background-image: linear-gradient(to left, #151819, rgba(0, 30.2, 57.3 ), #283643, #283643) ;    
+/* APRESENTAÇÃO INICIAL */
+header {
+    /*border: 1px solid red; /*Item temporário para criação */
+    margin-top: 200px;
     display: flex;
     align-items: center;
-    animation: subTituloFundo 1s linear;
+    justify-content: space-between;
 }
 
-body article h3 img {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    margin-right: 15px;
-    animation: subTitulo 0.3s linear;
+/* Redes Sociais */
+header .redesSociais {
+    /*border: 1px solid lime; /* Item temporário para criação */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 55px;
+    height: 250px;
 }
 
-@keyframes capa {
-    from {margin-bottom: 600px; height: 0px;}
-    to {margin-bottom: 0px; height: 250px;}
+header .redesSociais img {
+    /* border: 1px solid deepskyblue; Item temporário para criação */
+    border-radius: 50%;
 }
 
-@keyframes perfil {
-    from {height: 0px; width: 0px}
-    to {height: 200px; width: 200px;}
+header .redesSociais img:hover {
+    zoom: 1.2;
 }
 
-@keyframes redesSociais {
-    from {height: 0px; width: 0px;}
-    to {height: 40px; width: 40px;}
+/* Foto de perfil */
+header #fotoPerfil {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-image: url(/img/perfil.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px;
+    border-radius: 50%;
+    /* border: 1px solid chartreuse; Item temporário para criação */
 }
 
-@keyframes subTituloFundo {
-    from {margin-right: 980px;}
-    to {margin-right: 0px}
+header p {
+    font-size: 2em;
+    color: #FFF;
+    padding-right: 6px;
 }
 
 
-/* @keyframes subTitulo {
-    from {width: 0px; height: 0px;}
-    to {width: 30px; height: 30px;}
-} */
+.setaBaixo a {
+    color: gray;
+    font-size: 2em;
+    list-style: none;
+    text-decoration: none;
+
+    position: absolute;
+    top: 720px;
+    left: 720px;
+
+    /* border: 1px solid chartreuse; Item temporário para criação */
+    animation: setaBaixo 1s linear 1s infinite alternate;
+}
+
+.setaBaixo a:paused{
+    transition: 2s;
+}
+
+@keyframes setaBaixo {
+    from {top: 720px}
+    to {top: 700px}
+}
+
+
+
+
+/* ===================== */
+article {
+    display: relative;
+    position: absolute;
+    top: 1000px;
+    width: 1280px;
+    margin: auto;
+    color: white;
+    /* visibility: hidden; */
+}
+
+
+/* ===================== */
