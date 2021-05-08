@@ -1,31 +1,252 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outro Teste</title>
 
-        #dois {
-            visibility: hidden;
-        }
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-        #dropdown img {
-            width: 100px;
-            border: 1px solid lime;
-        }
+    nav ul {
+      display: block;
+    }
 
-        #dropdown img:hover #dois {
-            width: 200px;
-            visibility: visible;
-        }
-    </style>
-    </head>
+    img {
+      position: sticky;
+      top: 200px;
+      margin-left: 700px;
+    }
 
-    <div id="dropdown">
-        <img src="img/perfil.jpg" alt="">
-        <p>Exibindo Miniatura</p>
-    </div>
-    <div id="dois">
-        <img src="img/perfil.jpg" alt="">
-        <p>Exibindo Dois</p>
-    </div>
+    /* =====================
+    article {
+        display: relative;
+        position: absolute;
+        top: 1200px;
+        width: 1280px;
+        margin: auto;
+        color: white;
+        visibility: hidden;
+    }
+    /* ===================== */
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>Scroll & Sticky!</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Opção 1</a></li>
+      <li><a href="#rodaPe">Opção 2</a></li>
+      <li><a href="#">Opção 3</a></li>
+      <li><a href="#">Opção 4</a></li>
+      <li><a href="#">Opção 5</a></li>
+    </ul>
+  </nav>
+  
+  <article id="teste">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi iusto tempore. Perferendis omnis quasi exercitationem voluptates ab officia beatae repudiandae? Aut libero dolore maxime recusandae omnis facilis, adipisci velit!</p>
+
+
+  </article>
+
+  <img src="/img/samuel.png" alt="Samuel">
+
+  <footer>
+    <h4>Redes Sociais</h4>
+    <Ul>
+      <li>Facebook</li>
+      <li>Instagram</li>
+      <li>Twitter</li>
+      <li>Reddit</li>
+    </Ul>
+
+    <h4>Listagem</h4>
+    <ul>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li>Linha 1</li>
+      <li id="linha2">Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+      <li>Linha 2</li>
+    </ul>
+    <p id="rodaPe">Copyright - Marcos Xavier Cavalcante</p>
+  </footer>
+
+
 </body>
 </html>

@@ -1,5 +1,5 @@
-* {
-    /* font-family: Arial, Helvetica, sans-serif; */
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -55,6 +55,17 @@ nav {
     opacity: 100;    
 }
 
+#retorno img {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+
+
 header {
     background: radial-gradient(gray, teal);
     background-image: url("../img/capa.jpg");
@@ -105,7 +116,7 @@ header span:first-child {
     height: 200px;
     margin: auto;
     margin-top: -160px;
-    animation: perfil 1s linear;  
+    animation: perfil 1s, border 1s linear;  
 }
 
 #fotoPerfil:hover {
@@ -115,7 +126,8 @@ header span:first-child {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 200px;
-    border-color: whitesmoke;  
+    /* border-color: whitesmoke; */
+    border-color: transparent;
 }
 
 #redesSociais {

@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 1280px;
     margin: auto;
@@ -123,26 +127,27 @@ header p {
 
 
 .setaBaixo a {
-    color: gray;
+    color: #a074c4;
     font-size: 2em;
     list-style: none;
     text-decoration: none;
-
     position: absolute;
-    top: 720px;
-    left: 720px;
+    top: 80%;
+    left: 50%;
 
-    /* border: 1px solid chartreuse; Item temporário para criação */
+    /* border: 1px solid chartreuse; /* Item temporário para criação */
     animation: setaBaixo 1s linear 1s infinite alternate;
 }
 
-.setaBaixo a:paused{
-    transition: 2s;
+.setaBaixo a:hover {
+    color: #FFF;
+    transition: color 1s;
+
 }
 
 @keyframes setaBaixo {
-    from {top: 720px}
-    to {top: 700px}
+    from {top: 80%}
+    to {top: 75%}
 }
 
 
@@ -156,8 +161,6 @@ article {
     width: 1280px;
     margin: auto;
     color: white;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
-
-
 /* ===================== */
