@@ -55,7 +55,7 @@ nav {
     opacity: 100;    
 }
 
-#retorno img {
+/* #retorno img {
     position: fixed;
     right: 20px;
     bottom: 50px;
@@ -63,6 +63,17 @@ nav {
     background-color: white;
     border-radius: 50%;
     
+} */
+
+#retorno img {
+    float: right;
+    position: sticky;
+    top: 300px;
+    bottom: 30px;
+    right: 20px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 

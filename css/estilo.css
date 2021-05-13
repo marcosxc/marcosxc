@@ -1,11 +1,12 @@
 * {
-    font-family: 'Orbitron', 'sans-serif';
     margin: 0px;
     padding: 0px;
+    
 }
 
 html {
     scroll-behavior: smooth;
+    font-family: 'Orbitron', 'sans-serif';
 }
 
 body {
@@ -18,14 +19,19 @@ body {
     background-position-y: top;
 }
 
-/* MENU */
+#topo {
+    width: 0px;
+    position: absolute;
+    top: -10px;
+}
 
+/* MENU */
 nav { 
     position: fixed;
     float: left;
     top: 2px;
-    /*border: 1px solid blue; /* Item temporário para criação */
     z-index: 999;
+    
 }
 
 .menu {
@@ -35,31 +41,25 @@ nav {
     margin-top: 5px;
     display: block;
     justify-content: space-between;
-    /*border: 1px solid blue; /* Item temporário para criação */
 }
 
 .menu li{
     list-style: none;
     position: relative;
     float: left;
-    /*border: 0.5px solid gray; /* Item temporário para criação */
-    width: 255.4px;
-    background-color: rgba(51, 51, 51, 0.5);
+    width: 256px;
+    background-color: rgba(51, 51, 51, 0.9);
 }
 
 .menu li a {
     color: #a074c4;
     text-decoration: none;
-    /* margin: 5px 15px; */
     padding: 5px 15px;
-    /* border-left: 1px solid #a074c4;
-    border-right: 1px solid #a074c4; */
     display: block;
-    /*border: 1px solid yellow; /* Item temporário para criação */
 }
 
 .menu li a:hover {
-    background-color: rgba(51, 51, 51, 0.9);
+    background-color: rgba(40, 40, 40, 1);
     color: white;
 }
 
@@ -69,7 +69,6 @@ nav {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.6s linear;
-    /*border: 1px solid mediumvioletred; /* Item temporário para criação */
 }
 
 .menu li:hover ul {
@@ -77,10 +76,88 @@ nav {
     opacity: 100;
 }
 
-/* APRESENTAÇÃO INICIAL */
+
+/* Botão Próximo */
+.btnproximo {
+    width: 60px;
+    height: 90px;
+    border: 1px solid blue;
+    text-align: center;
+    position: relative;
+    top: 30vh;
+    right: 50%;
+}
+
+.btnproximo a{
+    display: block;
+    margin-top: 30px;
+    color: #a074c4;
+    font-size: 3em;
+    text-decoration: none;
+    animation: btnProximo 2s linear 1s infinite alternate;
+}
+
+@keyframes btnProximo {
+    from {margin-top: 0px}
+    to {margin-top: 30px}
+}
+
+/* Botão continuar lendo */
+
+.btnContinuarLendo {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    background-color: #a074c4;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s color padding;
+}
+
+.btnContinuarLendo:hover {
+    margin-top: 57px;
+    margin-bottom: 33px;
+    color: #f0f0f0;
+    box-shadow: 3px 3px 5px #7a519d;
+}
+
+.btnSaberMais {
+    margin: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    color: #f0f0f0;
+    background-color: #a074c4;
+    text-decoration: none;
+}
+
+.btnSaberMais:hover {
+    box-shadow: 2px 2px 2px #7a519d;
+}
+
+#retornoTopo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+#retornoTopo img {
+    width: 50px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: #a074c4;
+    transition: 1s;
+ }
+
+ #retornoTopo img:hover {
+     background-color: #FFF;
+ }
+
+ /* APRESENTAÇÃO INICIAL */
 header {
-    /*border: 1px solid red; /*Item temporário para criação */
-    margin-top: 200px;
+    margin-top: 20vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,7 +165,6 @@ header {
 
 /* Redes Sociais */
 header .redesSociais {
-    /*border: 1px solid lime; /* Item temporário para criação */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -98,7 +174,6 @@ header .redesSociais {
 }
 
 header .redesSociais img {
-    /* border: 1px solid deepskyblue; Item temporário para criação */
     border-radius: 50%;
 }
 
@@ -116,7 +191,6 @@ header #fotoPerfil {
     background-position: center;
     background-size: 250px;
     border-radius: 50%;
-    /* border: 1px solid chartreuse; Item temporário para criação */
 }
 
 header p {
@@ -125,42 +199,94 @@ header p {
     padding-right: 6px;
 }
 
-
-.setaBaixo a {
+#setaBaixoUm a {
     color: #a074c4;
     font-size: 2em;
-    list-style: none;
     text-decoration: none;
     position: absolute;
     top: 80%;
     left: 50%;
-
-    /* border: 1px solid chartreuse; /* Item temporário para criação */
-    animation: setaBaixo 1s linear 1s infinite alternate;
+    animation: setaBaixoUm 1s linear 1s infinite alternate;
 }
 
-.setaBaixo a:hover {
+#setaBaixoUm a:hover {
     color: #FFF;
     transition: color 1s;
-
 }
 
-@keyframes setaBaixo {
+@keyframes setaBaixoUm {
     from {top: 80%}
     to {top: 75%}
 }
 
-
-
-
-/* ===================== */
-article {
-    display: relative;
-    position: absolute;
-    top: 1000px;
-    width: 1280px;
-    margin: auto;
-    color: white;
-    visibility: hidden;
+/* Quem Sou eu */
+#quemSouEu {
+    background-color: #f0f0f0;
+    margin-top: 50vh;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
 }
-/* ===================== */
+
+#quemSouEu img {
+    width: 400px;
+    margin-top: -100px;
+}
+
+#quemSouEu div {
+    width: 600px;
+    margin: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #696969;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/* Disposição em formato de vitral */
+.vitral {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.vitral div {
+    padding: 40px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    box-shadow: 5px 10px 20px gray;
+}
+
+.vitral img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.vitral p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Experiência Profissional */
+#empregos {
+    /* border: 1px solid hotpink; */
+    height: 95vh;
+    color: #696969;
+    background-color: #222;
+}
+
+#empregos h3 {
+    text-align: center;
+    font-size: 2em;
+    padding: 60px 0px 60px 0px;
+}
+
+
