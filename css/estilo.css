@@ -1,12 +1,12 @@
 * {
     margin: 0px;
     padding: 0px;
-    
 }
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Orbitron', 'sans-serif';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fafafa;
 }
 
 body {
@@ -17,21 +17,21 @@ body {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
+
+    /* border: 1px solid yellow; */
 }
 
-#topo {
-    width: 0px;
-    position: absolute;
-    top: -10px;
+h3 {
+    font-size: 1.5em;
 }
 
-/* MENU */
+/* Menu e Navegação*/
 nav { 
+    font-family: 'Orbitron', 'sans-serif';
     position: fixed;
     float: left;
-    top: 2px;
+    top: 1px;
     z-index: 999;
-    
 }
 
 .menu {
@@ -64,7 +64,7 @@ nav {
 }
 
 .menu li ul {
-    width: 250px;
+    width: 256px;
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -76,217 +76,225 @@ nav {
     opacity: 100;
 }
 
-
-/* Botão Próximo */
-.btnproximo {
-    width: 60px;
-    height: 90px;
-    border: 1px solid blue;
-    text-align: center;
-    position: relative;
-    top: 30vh;
-    right: 50%;
-}
-
-.btnproximo a{
-    display: block;
-    margin-top: 30px;
-    color: #a074c4;
-    font-size: 3em;
-    text-decoration: none;
-    animation: btnProximo 2s linear 1s infinite alternate;
-}
-
-@keyframes btnProximo {
-    from {margin-top: 0px}
-    to {margin-top: 30px}
-}
-
-/* Botão continuar lendo */
-
-.btnContinuarLendo {
-    margin-top: 60px;
-    margin-bottom: 30px;
-    padding: 15px 30px;
-    font-size: 1.3em;
-    background-color: #a074c4;
-    color: #fff;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: 0.5s color padding;
-}
-
-.btnContinuarLendo:hover {
-    margin-top: 57px;
-    margin-bottom: 33px;
-    color: #f0f0f0;
-    box-shadow: 3px 3px 5px #7a519d;
-}
-
-.btnSaberMais {
-    margin: 10px;
-    padding: 15px;
-    font-size: 1.2em;
-    border-radius: 10px;
-    color: #f0f0f0;
-    background-color: #a074c4;
-    text-decoration: none;
-}
-
-.btnSaberMais:hover {
-    box-shadow: 2px 2px 2px #7a519d;
-}
-
-#retornoTopo {
+#btn_retornoTopo {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-}
-
-#retornoTopo img {
-    width: 50px;
-    padding: 2px;
+    bottom: 15px;
+    right: 40px;
     border-radius: 50%;
     background-color: #a074c4;
     transition: 1s;
- }
-
- #retornoTopo img:hover {
-     background-color: #FFF;
- }
-
- /* APRESENTAÇÃO INICIAL */
-header {
-    margin-top: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-/* Redes Sociais */
-header .redesSociais {
+#btn_retornoTopo:hover {
+    background-color: #f0f0f0;
+}
+
+#btn_retornoTopo img{
+    width: 50px;
+}
+
+/* Botão (Seta) Próxima sessão */
+.btn_setaProximo {
+    width: 50px;
+    height: 60px;
+    margin: auto;
+    /* margin-bottom: 50px; */
+    display: flex;
+    justify-content: center;
+}
+
+.btn_setaProximo a {
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #844cb3;
+    animation: setaProximo 1s linear 1s infinite alternate;
+}
+
+@keyframes setaProximo {
+    from {margin-top: 0px}
+    to {margin-top: -20px; color: #a074c4}
+}
+
+.btn_lerMais {
+    display: block;
+    width: 200px;
+    margin: 40px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #a074c4;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+
+}
+
+.btn_lerMais:hover {
+    box-shadow: 3px 3px 3px #844cb3;
+    color: #ccc;
+    transform: scale(1.01);
+}
+
+/* Cabeçalho da página (Apresentação inicial) */
+header {
+    font-family: 'Orbitron', 'sans-serif';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+}
+
+header p{
+    font-size: 2em;
+}
+
+#redesSociais {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-items: center;
     width: 55px;
-    height: 250px;
 }
 
-header .redesSociais img {
-    border-radius: 50%;
+#redesSociais a {
+    margin: 10px 0px 10px 0px;
 }
 
-header .redesSociais img:hover {
-    zoom: 1.2;
+#redesSociais a:hover {
+    transform: scale(1.1)
 }
 
-/* Foto de perfil */
-header #fotoPerfil {
-    display: block;
-    width: 250px;
-    height: 250px;
-    background-image: url(/img/perfil.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 250px;
-    border-radius: 50%;
+#redesSociais img{
+    justify-content: center;
+    width: 50px;
 }
 
-header p {
-    font-size: 2em;
-    color: #FFF;
-    padding-right: 6px;
+#fotoPerfil img{
+    width: 300px;
+    height: 300px;
 }
 
-#setaBaixoUm a {
-    color: #a074c4;
-    font-size: 2em;
-    text-decoration: none;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    animation: setaBaixoUm 1s linear 1s infinite alternate;
+/* Assuntos principais */
+main {
+    background-color: #020113;
 }
 
-#setaBaixoUm a:hover {
-    color: #FFF;
-    transition: color 1s;
-}
-
-@keyframes setaBaixoUm {
-    from {top: 80%}
-    to {top: 75%}
-}
-
-/* Quem Sou eu */
+/* Quem sou eu e meu interesse por tecnologia */
 #quemSouEu {
-    background-color: #f0f0f0;
-    margin-top: 50vh;
-    padding-top: 5vh;
+    height: 98vh;
+    background-color: #cccccc;
+    color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 70vh;
-}
-
-#quemSouEu img {
-    width: 400px;
-    margin-top: -100px;
 }
 
 #quemSouEu div {
-    width: 600px;
-    margin: 60px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #696969;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 700px;
+    margin: 70px;
+}
+
+#quemSouEu h3, #quemSouEu p{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    line-height: 25px;
     text-align: justify;
 }
 
-/* Disposição em formato de vitral */
+#quemSouEu img {
+    width: 300px;
+    height: 146px;
+    margin-right: 60px;
+}
+
+#setaQuemSouEu {
+    margin-top: -80px;
+}
+
+/* Empregos Anteriores */
+#empregos {
+    height: 95vh;
+}
+
+#empregos h3 {
+    width: 600px;
+    margin: 60px auto;
+    margin-bottom: 50px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+/* Disposição em Formato de Vitral */
 .vitral {
-    /* border: 1px solid greenyellow; */
     display: flex;
     justify-content: space-around;
 }
 
 .vitral div {
-    padding: 40px 50px 50px 50px;
+    /* border: 1px solid royalblue; */
+    width: 260px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #f0f0f0;
-    border: 1px solid black;
-    box-shadow: 5px 10px 20px gray;
+    background-color: rgba(23, 27, 38, 1);
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px rgb(99, 99, 99);
 }
 
-.vitral img {
+.vitral div img {
     width: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
-.vitral p {
+.vitral div p {
     text-align: center;
-    margin-bottom: 20px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
 }
 
-/* Experiência Profissional */
-#empregos {
+.vitral hr {
+    width: 200px;
+    border-color: gray
+}
+
+/* Evolução constante */
+#evolucao {
+    height: 98vh;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+
+#evolucao div {
+    /* border: 1px solid blue; */
+    width: 600px;
+    text-align: justify;    
+}
+
+#evolucao h3 {
     /* border: 1px solid hotpink; */
-    height: 95vh;
-    color: #696969;
-    background-color: #222;
-}
-
-#empregos h3 {
+    font-size: 1.2em;
     text-align: center;
-    font-size: 2em;
-    padding: 60px 0px 60px 0px;
+    font-style: italic;
 }
 
+#evolucao cite {
+    /* border: 1px solid red; */
+    display: block;
+    text-align: right;
+    margin-bottom: 25px;
+}
 
+#evolucao img {
+    /* border: 1px solid orange; */
+    width: 500px;
+}
+
+#evolucao p {
+    line-height: 1.5em;
+}
+
+#setaEvolucao {
+    margin-top: -60px;
+}

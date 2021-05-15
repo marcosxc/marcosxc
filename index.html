@@ -37,12 +37,11 @@
                 <li><a href="#">Contato</a></li>
             </ul>
 
-            <a id="retornoTopo" href="#topo"><img src="/img/aviao-do-exercito.svg" alt="Avião"></a>
+            <a id="btn_retornoTopo" href="#topo"><img src="/img/aviao-do-exercito.svg" alt="Avião"></a>
         </nav>
-        
 
         <header>
-            <div class="redesSociais">
+            <div id="redesSociais">
                 <a href="https://twitter.com/xavier_1988" target="_blank"><img src="img/twitter/twitter.png" alt="Twitter"></a>
         
                 <a href="https://www.linkedin.com/in/marcosxc/" target="_blank"><img src="img/linkedin/linkedin.png" alt="Linkedin"></a>
@@ -50,51 +49,81 @@
                 <a href="https://github.com/marcosxc" target="_blank"><img src="img/github/github.png" alt="GitHub"></a>
             </div>
 
-            <span id="fotoPerfil"></span>
+            <span id="fotoPerfil"><img src="/img/perfil.svg" alt="Foto de Perfil Marcos"></span>
+
             <p>Marcos Xavier Cavalcante <br/> Analista de T.I. e B.I.</p>
-            <p id="setaBaixoUm"><a href="#quemSouEu">V</a></p>
         </header>
-        
-        <article id="quemSouEu">
-            <div>
-                <h3>Quem sou e meu interesse por tecnologia</h3>
-                <br>
-                <p>Com o lançamento da minha primeira versão (nascimento) em 30 de agosto de 1988 tomei forma e me mantenho armazenado até hoje na Cidade Tiradentes - Zona Leste de São Paulo, projetado e desenvolvido por Alvino - Mecânico de Manutenção de Máquinas em geral - e Ildacil - Diarista - tornei-me consciente do meu interesse por tecnologia ainda muito novo, ainda na versão 6.0. Sempre fascinado com filmes de ficção como Star Wars, Star Trek, Stargate, De volta para o futuro, Hacker - Piratas de computador, entre outros inúmeros clássicos. Também ficava entusiasmado quando frequentava a casa de minha madrinha aos domingos e visualizava meu primo trabalhando com computadores, na época não detinha conhecimento sobre nada do que ele estava fazendo, mas ao ver desmontando e montando, digitando códigos no terminal do MS-DOS e as coisas funcionando, aquilo me chamava muito a atenção.</p>
 
-                <a class="btnContinuarLendo" href="#">Continuar Leitura</a>
-            </div>     
+        <span class="btn_setaProximo"><a href="#quemSouEu">V</a></span>
 
-            <img src="/img/testes/quem_sou_eu.png" alt="Quem sou eu?">
-            <h4 class="btnproximo"><a href="#empregos">V</a></h4>
-        </article>
-
-        <article id="empregos">
-            <h3>Minha experiência profissional!</h3>
-            
-            <div class="vitral">
+        <main>
+            <article id="quemSouEu">
                 <div>
-                    <img src="/img/empresas/lgp-bi4all.jpg" alt="Logo BI 4 All">
-                    <p>BI4All <br>Consultor de B.I.</p>
-                    <p>09/2019 a 12/2019</p>
-                    <a class="btnSaberMais" href="#">Saiba Mais</a>
+                    <h3>Quem sou e meu interesse por tecnologia</h3>
+                    <br>
+                    <p>Com o lançamento da minha primeira versão (nascimento) em 30 de agosto de 1988 tomei forma e me mantenho alocado até hoje na Cidade Tiradentes - Zona Leste de São Paulo, projetado e desenvolvido por Alvino - Mecânico de Manutenção de Máquinas em geral - e Ildacil - Diarista - tornei-me consciente do meu interesse por tecnologia ainda muito novo, ainda na versão 6.0. Sempre fascinado com filmes de ficção como Star Wars, Star Trek, Stargate, De volta para o futuro, Hacker - Piratas de computador, entre outros inúmeros clássicos. Também ficava entusiasmado quando frequentava a casa de minha madrinha aos domingos e visualizava meu primo trabalhando com computadores, na época não detinha conhecimento sobre nada do que ele estava fazendo, mas ao ver desmontando e montando, digitando códigos no terminal do MS-DOS e as coisas funcionando, aquilo me chamava muito a atenção.</p>
+
+                    <a class="btn_lerMais" href="#">Continuar Leitura</a>
+                </div>     
+
+                <img src="/img/quem_sou_eu.png" alt="Quem sou eu?">
+            </article>
+                
+            <span class="btn_setaProximo" id="setaQuemSouEu"><a href="#empregos">V</a></span>
+
+            <article id="empregos">
+                <h3>Minha experiência profissional!</h3>
+                
+                <div class="vitral">
+                    <div>
+                        <img src="/img/empresas/lgp-UniversidadeBrasil.jpg" alt="Logo Grupo Shark">
+                        <p>Universidade C.C.B.</p>
+                        <p>10/2006 a 08/2011</p>
+                        <hr>
+                        <p>Tec. em Manut. de Micro <br>Admin. de Redes<br><br></p>
+                        <a class="btn_lerMais" href="#">Saiba Mais</a>
+                    </div>
+
+                    <div>
+                        <img src="/img/empresas/lgp-shark.jpg" alt="Logo Grupo Shark">
+                        <p>Grupo Shark</p>
+                        <p>08/2011 a 09/2019</p>
+                        <hr> 
+                        <p>Analista de Suporte <br>Analista de Sistemas <br>Analista de B.I.</p>
+                        <a class="btn_lerMais" href="#">Saiba Mais</a>
+                    </div>
+
+                    <div>
+                        <img src="/img/empresas/lgp-bi4all.jpg" alt="Logo BI 4 All">
+                        <p>BI4All</p>
+                        <p>09/2019 a 12/2019</p>
+                        <hr>
+                        <p>Consultor de B.I.<br><br><br></p>
+                        <a class="btn_lerMais" href="#">Saiba Mais</a>
+                    </div>
                 </div>
+            </article>
+
+            <span class="btn_setaProximo" id="setaEmprego"><a href="#evolucao">V</a></span>
+
+            <article id="evolucao">
+
+                <img src="/img/crescimento.png" alt="Evolução Constante!">
 
                 <div>
-                    <img src="/img/empresas/lgp-shark.jpg" alt="Logo Grupo Shark">
-                    <p>Grupo Shark <br>Analista de B.I.</p>
-                    <p>02/2019 a 09/2021</p>
-                    <a class="btnSaberMais" href="#">Saiba Mais</a>
-                    
+                    <h3><q>Uma mente que se expande, <br>jamais retorna ao seu estado original!</q></h3><cite>Albert Einstein</cite>
+                        
+                    <p>Assim como os sistemas, nós também precisamos passar por atualizações constantes, para está sempre melhorando em todos os sentidos de nossa vida. Pois mesmo nosso firewall mental, não é capaz de impedir completamente que acontecimentos de nossa vida pessoal, acadêmica e profissional interfiram umas nas outras. E isso ocorre frequentemente, seja de forma positiva ou negativa. Por isso estou sempre em uma busca constante de evolução como ser humano, aprendendo formas melhores de lidar com pessoas, equipes e grupos, seja buscando conhecimento através de cursos livre e/ou de especialização, e mesmo um crescimento profissional sempre me preparando para uma posição melhor na empresa.</p>
+                    <p>Analisando meu log profissional e academico é fácilmente notável essa correlação entre promossões na empresa e os cursos realizados, pois sempre procuro me manter preparado para uma posição que almejo, ou conquistando uma posição de forma inesperada, me preparo para executar minhas atividades com a melhor eficiencia e eficâcia, e faço isso através dos estudos.</p>
                 </div>
+            </article>
 
-                <div>
-                    <img src="/img/empresas/lgp-shark.jpg" alt="Logo Grupo Shark">
-                    <p>Grupo Shark <br>Analista de Sistemas</p>
-                    <p>09/2014 a 01/2019</p>
-                    <a class="btnSaberMais" href="#">Saiba Mais</a>
-                </div>
-            </div>
-        </article>
+            <!-- <span class="btn_setaProximo" id="setaEvolucao"><a href="#evolucaoConstante">V</a></span>
+
+            <article id="estudos">
+                <h3><q>Deixe o futuro dizer a verdade, e avaliar cada um de acordo com seus trabalhos e suas conquistas.</q></h3><cite>Nikola Tesla</cite>
+            </article> -->
+        </main> 
     </body>
     
 </html>
