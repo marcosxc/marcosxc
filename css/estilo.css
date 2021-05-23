@@ -13,7 +13,7 @@ body {
     width: 1280px;
     margin: auto;
     background-color: rgba(23, 27, 38, 1);
-    background-image: url(img/capa.jpg);
+    background-image: url(../img/capa.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
@@ -326,5 +326,61 @@ main {
 
 #estudos .vitral {
     margin-top: 50px;
+}
 
+/* Certificados */
+
+#certificado {
+    /* border: 1px solid hotpink;    */
+
+    height: 98vh;
+    background-color: #ccc;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+#certificado img {
+    /* border: 1px solid red; */
+
+    width: 450px;
+    margin-top: -150px;
+}
+
+#certificado div {
+    /* border: 1px solid blue; */
+    
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+#certificado h3 {
+    /* border: 1px solid yellow; */
+    margin: auto;
+}
+
+#certificado cite {
+    /* border: 1px solid orangered; */
+    display: block;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+#certificado p {
+    /* border: 1px solid green; */
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    height: 80px;
+    background-color: black;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
 }
