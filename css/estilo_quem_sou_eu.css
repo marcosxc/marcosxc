@@ -8,8 +8,8 @@
 }
 
 @keyframes carrocel {
-    /*0% {background-image: url(../img/qsu_carrocel/05.jpg); background-position: center;}
-    15% {background-image: url(../img/qsu_carrocel/06.jpg);}
+    0% {background-image: url(../img/qsu_carrocel/05.jpg); background-position: center;}
+    /*15% {background-image: url(../img/qsu_carrocel/06.jpg);}
     30% {background-image: url(../img/qsu_carrocel/07.jpg);}
     45% {background-image: url(../img/qsu_carrocel/04.jpg);}
     60% {background-image: url(../img/qsu_carrocel/01.jpg);}
