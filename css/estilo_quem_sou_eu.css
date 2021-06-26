@@ -1,20 +1,20 @@
 #carrocel {
     padding-left: 1280px;
     padding-bottom: 400px;
-    background-image: url(img/qsu_carrocel/05.jpg);
+    background-image: url(../img/qsu_carrocel/05.jpg);
     background-repeat: no-repeat;
     background-size: 1280px, 400px;
     animation: carrocel 40s linear alternate-reverse infinite 2s;
 }
 
 @keyframes carrocel {
-    0% {background-image: url(img/qsu_carrocel/05.jpg); background-position: center;}
-    15% {background-image: url(img/qsu_carrocel/06.jpg);}
-    30% {background-image: url(img/qsu_carrocel/07.jpg);}
-    45% {background-image: url(img/qsu_carrocel/040.jpg);}
-    60% {background-image: url(img/qsu_carrocel/01.jpg);}
-    85% {background-image: url(img/qsu_carrocel/02.jpg);}
-    100% {background-image: url(img/qsu_carrocel/03.jpg);}
+    0% {background-image: url(../img/qsu_carrocel/05.jpg); background-position: center;}
+    15% {background-image: url(../img/qsu_carrocel/06.jpg);}
+    30% {background-image: url(../img/qsu_carrocel/07.jpg);}
+    45% {background-image: url(../img/qsu_carrocel/040.jpg);}
+    60% {background-image: url(../img/qsu_carrocel/01.jpg);}
+    85% {background-image: url(../img/qsu_carrocel/02.jpg);}
+    100% {background-image: url(../img/qsu_carrocel/03.jpg);}
 }
 
 h3 {
