@@ -9,33 +9,38 @@
     <link rel="stylesheet" href="css/estilo.css" type="text/css"> 
     <link rel="stylesheet" href="css/estilo_profissional.css" type="text/css">
 </head>
-<body id="navegacao">
-    <nav id="navegacao">
-        <ul class="menu">
-            <li><a id="topHome" href="index.html">Home</a></li>
-            <li><a href="#">Profissional</a>
-                <ul>
-                    <li><a href="profissional.html#profissao_fora">Outra áreas</a></li>
-                    <li><a href="profissional.html#profissao_uni_tmmc">Tec. Manu. de PC</a></li>
-                    <li><a href="profissional.html#profissao_uni_art">Adm de Redes</a></li>
-                    <li><a href="profissional.html#profissao_shar_as">Analista de Suporte</a></li>
-                    <li><a href="profissional.html#profissao_shar_ana">Analista de Sistemas</a></li>
-                    <li><a href="profissional.html#profissao_shar_ab">Analista de B.I.</a></li>
-                    <li><a href="profissional.html#profissao_bi_cb">Consultor de B.I.</a></li>
-                </ul>
-            </li>            
-            <li><a href="#">Educacional</a>
-                <ul>
-                    <li><a href="#">Acadêmico</a></li>
-                    <li><a href="#">Cursos Livres</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Certificados</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
 
-        <a id="btn_retornoTopo" href="#profissao"><img src="img/aviao-do-exercito.svg" alt="Avião"></a>
-    </nav>
+<body id="navegacao">
+    
+    <header>
+        <nav id="navegacao">
+            <ul class="menu">
+                <li><a id="topHome" href="index.html">Home</a></li>
+                <li><a href="#">Profissional</a>
+                    <ul>
+                        <li><a href="profissional.html#profissao_fora">Outra áreas</a></li>
+                        <li><a href="profissional.html#profissao_uni_tmmc">Tec. Manu. de PC</a></li>
+                        <li><a href="profissional.html#profissao_uni_art">Adm de Redes</a></li>
+                        <li><a href="profissional.html#profissao_shar_as">Analista de Suporte</a></li>
+                        <li><a href="profissional.html#profissao_shar_ana">Analista de Sistemas</a></li>
+                        <li><a href="profissional.html#profissao_shar_ab">Analista de B.I.</a></li>
+                        <li><a href="profissional.html#profissao_bi_cb">Consultor de B.I.</a></li>
+                    </ul>
+                </li>            
+                <li><a href="#">Educacional</a>
+                    <ul>
+                        <li><a href="#">Acadêmico</a></li>
+                        <li><a href="#">Cursos Livres</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Certificados</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <a id="btn_retornoTopo" href="#profissao"><img src="img/aviao-do-exercito.svg" alt="Avião"></a>
+        </nav>
+    </header>
+
     
 
     <main>
@@ -75,7 +80,7 @@
           <img src="img/profissional/unicastelo_suporte.png" alt="Profissional na Unicastelo">
           
           <div>
-          <h4>Unicastelo - Técnico em Manutenção e Montagem de Computadores</h4>
+            <h4>Unicastelo - Técnico em Manutenção e Montagem de Computadores</h4>
             <p>
                 Sabe aquele jogo/filme que você está aguaradndo o lançamento a anos e finalmente chega o dia? Foi assim que me senti quando comecei. Sem restart e sem cheats, e onde iria obter muita experiência na área de infraestrutura.
             </p>
@@ -106,37 +111,23 @@
                 <p>
                     <ul>
                     <li>
-                        <p>
                         Firewall: Trabalhavamos com dois sistemas, um com sistema Linux gratuito chamado IPCop. Nesse criávamos as regras primárias, controle de banda e acesso externo. No ISA Server da Microsoft realizávamos as regras internas da rede e as regras secundárias de acesso a internet.
-                        </p>
                     </li>
                     <li>
-                        <p>
                         Active Directory: Neste eram realizados o controle de acesso dos usuários, através de regras criadas no AD conhecidas como GPOs, podiamos definir em quais computadores os usuários poderia logar, quais alterações poderia fazer ou não, tais como personalizar área de trabalho, instalar/desintalar programas, quais os caminhos de rede e impressoras teriam permissões de utilziar.
-                        </p>
                     </li>
                     <li>
-                        <p>
                         DHCP, DNS, WINS: Com a distribuição gerenciada de endereços IP, sabiamos exatamente quais eram as máquinas que acessavam a rede da Universidade, quais pertenciam a universidade e quais eram particulares de professores e funcionários e quais eram de alunos, também bloqueavamos o acesso de máquinas não conhecida, não permitindo o acesso a rede interna e limitando o acesso a internet.
-                        </p>
                     </li>
                     <li>
-                        <p>
                         Arquivos: Sabe quando Deus disse: "Noé, faça o backup que vou formatar!", era mais ou menos assim que explicávamos para o usuário a importancia de utilizar as pastas em rede, pois tinhamos um servidor de arquivo onde poderiamos realizar os backups e gerenciar arquivos não autorizados, como vídeos e fotos particulares. Caso tivesse algum problema no computador e o mesmo precisasse ser formatado ou ainda que por algum motivo o pc queimasse, ele poderia facilmente continuar trabalhando em qualquer computador na rede. Além de que os usuários tinham maior facilidade de compartilhar documentos com sua equipe, ou membros de outros departamentos, além é claro da seguraça e monitoria de acesso/edição.
-                        </p>
                     </li>
                     <li>
-                        <p>
                         Impressão: Esse servidor funcionava como um centro de controle das impressoras, além de facilitar a instalação e compartilhamento, ainda nos permitia verificar quem estava realizando impressões indevidas. A princípio utilizavamos o basico do Windows, posteriomente foi implantando um sistema mais profissional de gerenciamento de impressão.
-                        </p>
                     </li>
                     <li>
-                        <p>
                         Thin Cliente e Terminal Services: Já assistiu algum filme de zumbi? Qualquer um, pois todos tem basicamente a mesma lógica, morto ou infectados por algum vírus que os tornam praticamente corpos com as funções básica do curpo, na universidade tinhamos algo similar. A universidade possuía dois laboratórios com aproximadamente 45 "computadores" cada, na verdade eram máquina como Pentium 386, 486 com 128MB, 256MB de memória RAM e sem HD. Não, você não leu errado, eram máquinas totalmente obsoletas e sem HD, o mais incrível, é que rodavam sistemas como Office, CorelDraw, Photoshop, 3D Max entre outros.
-                        </p>
-                        <p>
                         Graças a um sistema chamado de Thin Client ou Terminal Burro, essas máquinas possuíam uma placa de rede com uma <abbr title="Em português: Memória Programável Apagável Somente de Leitura">EPROM</abbr> que buscava o boot em um servidor, que iniciava uma instância de usuário no Terminal Services, que este é quem tinha instalado o Windows, todos os softwares, e quem realmente realizava o processamento.
-                        </p>
                     </li>
                     </ul>
                 </p>
@@ -148,35 +139,40 @@
             <img src="img/profissional/unicastelo_redes.png" alt="Profissional nas Redes">
         </article>
 
-        <article id="profissao_shar_as">
-            <h4>Grupo Shark - Analista de Suporte</h4>
-            <p>
-                E com grandes upgrades, grandes recursos são necessários. Terminando a minha gradução, estava na hora que melhorar meu salário, e foi então que migrei da Universidade para uma empresa chamada Shark Tratores, uma concecionária de tratores e implementos agrícolas, e mais tarde entendi que era apenas uma, das sete empresas do Grupo Shark, que possuia ao total 7 empresas com filiais distribuidas em toda a região sul, suldeste e parte do centro-oeste. 
-            </p>
-            <p>
-                A princípio, vendo do ponto profissional, parecia mais um downgrade do que upgrade, voltando ao suporte de impressoras, ususários e etc. Mas a remuneração era basicamente o dobro do que recebia anteriormente, com o passar dos dias descobri que o trabalho também seria dobrado, basicamente englobava todas as atividades que cumpria anteriormente na equipe de suporte e de redes.
-            </p>
-            <p>
-                Agora as responsabilidades iriam desde trocar um mouse, até mesmo preparar, montar e equipar um filial inteira, além de encontrar forma de otimizar e melhorar o ambiente e comunicação com as filiais. Implantação de novos sistemas para gerenciamento da rede e usuários e um ambiente de chamados.
-            </p>
-            <p>
-                Enquanto parte da equipe de suporte, fui designado para realizar a substituição do sistema proprietário dos BluePex UTM, pelo sistema free chamado PFSense. 
-            </p>
-            <p>
-                Iniciando pelas filiais de São Paulo, me deslocava até as filiais para realizar a formatação, instalação e configuração do sistema nos equipamentos, para que podesse ser feito o gerenciamento de acesso a internet e "fechamento" da VPN com a matriz. Após finalizar as filiais do Estado, continuei o projeto com as demais filiais, que por motivos econômicos, eu deveria realizar a migração de forma "remota", uma vez que enviava um CD com o sistema, ou preparava um pendrive que houvesse na filial, acessando remotamente o computador de um colaborador da filial, e através de ligação e um manual préviamente enviado para o mesmo, realizava essa migração de sistemas.
-            </p>
-            <p>
-                Com esse projeto finalizado, foi hora de partir para um novo projeto, dessa vez tentando conscientizar os usuários, da importancia de realizar a abertura de chamados através do sistemas que estavamos implantando, uma ferramenta também gratuita chamada GLPI.
-            </p>
-            <p>
-                Até esse momento cada unidade de negócio (empresa) do grupo possuia um departamento individual de suporte, mas por motivos diversos, foi realizado a unificação dos departamentos, e assim deveriamos atender a todas as empresas do grupo, oque acarretou o aumento exponencial na demanda de chamados, e uma reestruturação nas funções e atividades.
-            </p>
-            <p>
-                Além dos sistemas em clipper, também passamos a dar suporte primário aos novo ERP que estava sendo implantado nas empresas do grupo, o sistema Protheus da TOTVS. Quando detectado que o problema estava no sistema e não no processo ou algo pontual na máquina, faziamos a "ponte" entre o usuário e o analista de sistema responsável pelo módulo em questão.
-            </p>
-            <p>
-                Durante um tempo foi interessante e irrequecedor do ponto de vista de conhecimento, mas após um tempo passou a ser algo muito rotineiro. E após um pouco mais de 3 anos, recebi uma proposta extremamente interessante. A oportunidade de mudar radicamente a minha caminhada profissional.
-            </p>
+        <article class="com_img" id="profissao_shar_as">
+
+            <img src="img/profissional/shark_ana_suporte.png" alt="Shark - Analista de Suprote">
+
+            <div>
+                <h4>Grupo Shark - Analista de Suporte</h4>
+                <p>
+                    E com grandes upgrades, grandes recursos são necessários. Terminando a minha gradução, estava na hora que melhorar meu salário, e foi então que migrei da Universidade para uma empresa chamada Shark Tratores, uma concecionária de tratores e implementos agrícolas, e mais tarde entendi que era apenas uma, das sete empresas do Grupo Shark, que possuia ao total 7 empresas com filiais distribuidas em toda a região sul, suldeste e parte do centro-oeste. 
+                </p>
+                <p>
+                    A princípio, vendo do ponto profissional, parecia mais um downgrade do que upgrade, voltando ao suporte de impressoras, ususários e etc. Mas a remuneração era basicamente o dobro do que recebia anteriormente, com o passar dos dias descobri que o trabalho também seria dobrado, basicamente englobava todas as atividades que cumpria anteriormente na equipe de suporte e de redes.
+                </p>
+                <p>
+                    Agora as responsabilidades iriam desde trocar um mouse, até mesmo preparar, montar e equipar um filial inteira, além de encontrar forma de otimizar e melhorar o ambiente e comunicação com as filiais. Implantação de novos sistemas para gerenciamento da rede e usuários e um ambiente de chamados.
+                </p>
+                <p>
+                    Enquanto parte da equipe de suporte, fui designado para realizar a substituição do sistema proprietário dos BluePex UTM, pelo sistema free chamado PFSense. 
+                </p>
+                <p>
+                    Iniciando pelas filiais de São Paulo, me deslocava até as filiais para realizar a formatação, instalação e configuração do sistema nos equipamentos, para que podesse ser feito o gerenciamento de acesso a internet e "fechamento" da VPN com a matriz. Após finalizar as filiais do Estado, continuei o projeto com as demais filiais, que por motivos econômicos, eu deveria realizar a migração de forma "remota", uma vez que enviava um CD com o sistema, ou preparava um pendrive que houvesse na filial, acessando remotamente o computador de um colaborador da filial, e através de ligação e um manual préviamente enviado para o mesmo, realizava essa migração de sistemas.
+                </p>
+                <p>
+                    Com esse projeto finalizado, foi hora de partir para um novo projeto, dessa vez tentando conscientizar os usuários, da importancia de realizar a abertura de chamados através do sistemas que estavamos implantando, uma ferramenta também gratuita chamada GLPI.
+                </p>
+                <p>
+                    Até esse momento cada unidade de negócio (empresa) do grupo possuia um departamento individual de suporte, mas por motivos diversos, foi realizado a unificação dos departamentos, e assim deveriamos atender a todas as empresas do grupo, oque acarretou o aumento exponencial na demanda de chamados, e uma reestruturação nas funções e atividades.
+                </p>
+                <p>
+                    Além dos sistemas em clipper, também passamos a dar suporte primário aos novo ERP que estava sendo implantado nas empresas do grupo, o sistema Protheus da TOTVS. Quando detectado que o problema estava no sistema e não no processo ou algo pontual na máquina, faziamos a "ponte" entre o usuário e o analista de sistema responsável pelo módulo em questão.
+                </p>
+                <p>
+                    Durante um tempo foi interessante e irrequecedor do ponto de vista de conhecimento, mas após um tempo passou a ser algo muito rotineiro. E após um pouco mais de 3 anos, recebi uma proposta extremamente interessante. A oportunidade de mudar radicamente a minha caminhada profissional.
+                </p>
+            </div>
         </article>
 
         <article class="com_img" id="profissao_shar_ana">
@@ -235,38 +231,49 @@
             <img src="img/profissional/shark.png" alt="Profissional na Shark">
         </article>
 
-        <article  id="profissao_shar_ab">
-            <h4>Grupo Shark - Analista de BI</h4>
-            <p>
-                Desde quando entrei para a equipe de Sistemas Corporativos, prestava suporte e treinamento em QlikView, e com o passar do tempo passei a dar manutenção nos dashboards já criados, implementação de novos relatórios, gráficos e análises, além de disponibilizar novos aplicativos, agendar atualizações, entre outras configurações no QMC.
-            </p>
-            <p>
-                Então foi chegado o momento de uma atualização no cargo oficial, já que na prática havia muito tempo que realizava as funções de um Analista de BI, além de ter concluído a Pós Graduação em BI. Por esse motivo me distanciei um pouco de minhas atribuições anteriores e foquei mais nas funções de BI.
-            </p>
-            <p>
-                Agora o foco e a rotina eram reuniões para levantamento de necessidade, verificação de dados, tratamento, carga, calculos e criação de relatórios e gráficos, e tudo com base nas análises que os clientes haviam solicitados
-            </p>
-            <p>
-                E a vida é uma caixinha de surpresa, e por nepotismo, colocaram o estagiário para ser o novo Gerente de TI, que por sua vez começou a replicar a ação e logo os clusters começaram a apresentar falhas e ficar inoperantes, erros de gravação e leitura dos setores e então... Após anos operando continuamente, era hora de uma pausa, executar uma desfragmentação no disco, repensar o projeto e reiniciar em um novo emprego.
-            </p>
+        <article class="com_img" id="profissao_shar_ab">
+            <img src="img/profissional/shark_ana_sistemas.png" alt="Profissional na Shark">
+
+            <div>
+                <h4>Grupo Shark - Analista de BI</h4>
+                <p>
+                    Desde quando entrei para a equipe de Sistemas Corporativos, prestava suporte e treinamento em QlikView, e com o passar do tempo passei a dar manutenção nos dashboards já criados, implementação de novos relatórios, gráficos e análises, além de disponibilizar novos aplicativos, agendar atualizações, entre outras configurações no QMC.
+                </p>
+                <p>
+                    Então foi chegado o momento de uma atualização no cargo oficial, já que na prática havia muito tempo que realizava as funções de um Analista de BI, além de ter concluído a Pós Graduação em BI. Por esse motivo me distanciei um pouco de minhas atribuições anteriores e foquei mais nas funções de BI.
+                </p>
+                <p>
+                    Agora o foco e a rotina eram reuniões para levantamento de necessidade, verificação de dados, tratamento, carga, calculos e criação de relatórios e gráficos, e tudo com base nas análises que os clientes haviam solicitados
+                </p>
+                <p>
+                    E a vida é uma caixinha de surpresa, e por nepotismo, colocaram o estagiário para ser o novo Gerente de TI, que por sua vez começou a replicar a ação e logo os clusters começaram a apresentar falhas e ficar inoperantes, erros de gravação e leitura dos setores e então... Após anos operando continuamente, era hora de uma pausa, executar uma desfragmentação no disco, repensar o projeto e reiniciar em um novo emprego.
+                </p>
+            </div>
         </article>
 
-        <article id="profissao_bi_cb">
-            <h4>BI4All - Consultor de BI</h4>
-            <p>
-                Um dia após solicitar meu desligamento na Shark, fui convidado para integrar a equipe de consultores da BI4all. Inicialmente declinei da proposta, pois havia feito alguns cursos, mas não tinha experiência nenhuma prévia com Power BI, a plataforma mais utilizada pelos contratantes da consultoria, mas após algumas conversas, aceitei o convite.
-            </p>
-            <p>
-                E depois de me atualizar com alguns cursos, online e presencial, comecei minhas atividades criando algumas POC que estavam pendentes de serem entregues. Em seguida comecei a visitar alguns clientes e acompanhar alguns projetos com o Consultor Senior, e antes que percebe-se já estava realizando a consultoria sozinho. Em alguns momentos, realizava o acompanhamento como auxliar durante os treinamentos que eram ministrados por um analista senior.
-            </p>
-            <p>
-                Permaneci por um breve período, mas após prestar consultorias para inúmeras empresas de renome, obtive uma curva de experiência e conhecimento muito elevada.
-            </p>
-            <p>
-                Depois dessa experiência, precisava dar continuidade em alguns projetos pessoais, além de resolver alguns assuntos de família, e por ter finalizado os projetos que estavam em andamento, era o momento certo de me desligar dessa empresa também!
-            </p>
+        <article class="com_img" id="profissao_bi_cb">
+            <div>
+                <h4>BI4All - Consultor de BI</h4>
+                <p>
+                    Um dia após solicitar meu desligamento na Shark, fui convidado para integrar a equipe de consultores da BI4all. Inicialmente declinei da proposta, pois havia feito alguns cursos, mas não tinha experiência nenhuma prévia com Power BI, a plataforma mais utilizada pelos contratantes da consultoria, mas após algumas conversas, aceitei o convite.
+                </p>
+                <p>
+                    E depois de me atualizar com alguns cursos, online e presencial, comecei minhas atividades criando algumas POC que estavam pendentes de serem entregues. Em seguida comecei a visitar alguns clientes e acompanhar alguns projetos com o Consultor Senior, e antes que percebe-se já estava realizando a consultoria sozinho. Em alguns momentos, realizava o acompanhamento como auxliar durante os treinamentos que eram ministrados por um analista senior.
+                </p>
+                <p>
+                    Permaneci por um breve período, mas após prestar consultorias para inúmeras empresas de renome, obtive uma curva de experiência e conhecimento muito elevada.
+                </p>
+                <p>
+                    Depois dessa experiência, precisava dar continuidade em alguns projetos pessoais, além de resolver alguns assuntos de família, e por ter finalizado os projetos que estavam em andamento, era o momento certo de me desligar dessa empresa também!
+                </p>
+            </div>
+
+            <img src="/img/profissional/bi4all_consult_bi.png" alt="Profissional BI4All">
         </article>
     </main>
-
+    <footer>
+        <hr>
+        <p>Desenvolvido por Marcos Xavier Cavalcante <br>- 2021 -</p>
+    </footer>
 </body>
 </html>

@@ -1,8 +1,8 @@
 /* PÁGINA PROFISSIONAL */
 
 article {
+    padding-top: 2em;
     padding-bottom: 20px;
-    /* height: 96vh; */
     min-height: 96vh;
     line-height: 1.5em;
     text-align: justify;
@@ -16,7 +16,6 @@ article h4 {
 article p {
     margin: 0px 40px 0px 40px;
 }
-
 
 .com_img {
     display: flex;
@@ -53,7 +52,7 @@ article:nth-child(even) {
     color: gray;
 }
 
-#profissao p {
+#profissao p{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
@@ -64,4 +63,17 @@ article:nth-child(even) {
     background-color: rgba(255, 255, 255, 0.1);
     line-height: 1.6em;
 }
+
+
+
+#profissao_uni_art ul {
+    list-style-position: inside;
+    width: 750px;
+    margin-left: 40px;
+}
+
+#profissao_uni_art li {
+    margin-top: 10px;
+}
+
 
