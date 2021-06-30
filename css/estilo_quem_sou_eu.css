@@ -4,7 +4,7 @@
     background-image: url(../img/qsu_carrocel/05.jpg);
     background-repeat: no-repeat;
     background-size: 1280px, 400px;
-    animation: carrocel 30s infinite;
+    animation: carrocel 30s linear;
 }
 
 @keyframes carrocel {
