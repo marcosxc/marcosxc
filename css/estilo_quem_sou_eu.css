@@ -8,8 +8,7 @@
 }
 
 @keyframes carrocel {
-    0% {background-image: url(../img/qsu_carrocel/05.jpg); background-position: center;}
-    50% {background-image: url(../img/qsu_carrocel/06.jpg);}
+    50% {background-image: url(../img/qsu_carrocel/06.jpg); background-position: center;}
     100% {background-image: url(../img/qsu_carrocel/07.jpg);}
 }
 
