@@ -1,15 +1,15 @@
 #carrocel {
     padding-left: 1280px;
     padding-bottom: 400px;
-    background-image: url(../img/qsu_carrocel/05.jpg);
+    /* background-image: url(../img/qsu_carrocel/05.jpg);  */
     background-repeat: no-repeat;
     background-size: 1280px, 400px;
     animation: carrocel 30s linear infinite;
 }
 
 @keyframes carrocel {
-    from {background-image: url(../img/qsu_carrocel/05.jpg); background-position: center;}
-    to {background-image: url(../img/qsu_carrocel/06.jpg);}
+    from {background-image: url(../img/qsu_carrocel/05.jpg);}
+    to {background-image: url(../img/qsu_carrocel/06.jpg); background-position: center;}
     
 }
 
