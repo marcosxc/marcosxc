@@ -8,7 +8,7 @@
 }
 
 @keyframes carrocel {
-    from {background-image: url(../img/qsu_carrocel/04.jpg); background-position: center;}
+    from {background-image: url(../img/qsu_carrocel/05.jpg); background-position: center;}
     to {background-image: url(../img/qsu_carrocel/06.jpg);}
     
 }
