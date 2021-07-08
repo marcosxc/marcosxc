@@ -1,9 +1,4 @@
-main img {
-    /* border: 1px solid red; */
-    /* width: 1280px; */
-}
-
-article:nth-child(even) {
+article:nth-child(odd) {
     background-color: #ccc;
     color: black;
 }
@@ -16,19 +11,30 @@ article {
 }
 
 article hr {
+    margin-top: 20px;
     margin-bottom: 20px;
+    border-color: #a074c4;
 }
 
-article:nth-child(2) {
-    background-image: url(../img/estudos/unicastelo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: soft-light;
+.cabecalho_estudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-article:nth-child(3) {
-    background-image: url(../img/estudos/impacta.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: soft-light;
+.cabecalho_estudo h4 {
+    font-size: 1.5em;
+}
+
+.cabecalho_estudo img {
+    width: 300px;
+}
+
+#materal_tcc_titulo {
+    margin: auto;
+}
+
+#material_tcc_link{
+    display: flex;
+    justify-content: space-around;
 }
