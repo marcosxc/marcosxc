@@ -27,14 +27,25 @@ article hr {
 }
 
 .cabecalho_estudo img {
-    width: 300px;
+    width: 250px;
 }
 
 #materal_tcc_titulo {
-    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 #material_tcc_link{
     display: flex;
     justify-content: space-around;
+}
+
+#material_tcc_link img {
+    width: 20px;
+}
+
+#iframe {
+    display: flex;
+    justify-content: center;
 }
