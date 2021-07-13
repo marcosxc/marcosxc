@@ -1,0 +1,53 @@
+article:nth-child(odd) {
+    background-color: #ccc;
+    color: black;
+}
+
+article {
+    min-height: 25vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+p {
+    width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+hr {
+    width: 900px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h3 {
+    width: 295px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+
+h4, h5 {
+    width: 900px;
+    margin: auto;
+    font-size: 1.1em;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#cursos-livres ul {
+    width: 850px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#cursos-livres li {
+    margin-top: 10px;
+}

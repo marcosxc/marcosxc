@@ -16,6 +16,10 @@ article hr {
     border-color: #a074c4;
 }
 
+article p {
+    line-height: 1.5em;
+}
+
 .cabecalho_estudo {
     display: flex;
     align-items: center;
