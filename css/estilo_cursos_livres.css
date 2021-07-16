@@ -38,7 +38,11 @@ h4, h5 {
 }
 
 h4 {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+h5 {
     margin-top: 20px;
 }
 
@@ -51,3 +55,22 @@ h4 {
 #cursos-livres li {
     margin-top: 10px;
 }
+
+.titulo_com_logo {
+     /* border: 1px solid red; */
+
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.titulo_com_logo img {
+    width: 250px;
+}
+
+hr {
+    border-color: #a074c4;
+}
+
