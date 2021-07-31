@@ -57,8 +57,6 @@ h5 {
 }
 
 .titulo_com_logo {
-     /* border: 1px solid red; */
-
     width: 900px;
     margin: auto;
     display: flex;
@@ -67,10 +65,22 @@ h5 {
 }
 
 .titulo_com_logo img {
-    width: 200px;
+    width: 150px;
 }
 
 hr {
     border-color: #a074c4;
+}
+
+#cursos {
+    width: 900px;
+    height: 88vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    margin-top: -15px;
 }
 

@@ -1,0 +1,386 @@
+main {
+    /* border: 1px solid yellow; */
+    padding-top: 50px;
+    min-height: 100vh;
+}
+
+#galeria_apresentacao {
+    background-color: #ccc;
+    background-image: url(../img/certificados/fundo_galeria.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 1280px 665px;
+    color: black;
+    width: 1280px;
+    height: 665px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+
+#galeria_apresentacao div {
+    width: 244px;
+    height: 265px;
+    margin-top: 64px;
+    border: 6px solid #000;
+    box-shadow: gray 3px 3px 3px;
+    /* background-color: black; */
+    /* color: #a074c4; */
+    color: rgba(0, 0, 100, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Monotype Corsiva;
+    font-size: 3.5em;
+    animation: galeria 3s linear alternate-reverse;
+}
+
+@keyframes galeria {
+    to {
+        color: #a074c4;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-color: #fff;
+        box-shadow:#000 4px 4px 4px;
+    }
+
+}
+
+#galeria_apresentacao div:nth-child(2) {
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+#galeria_apresentacao p {
+    transform: rotate(-45deg);
+}
+
+#galeria_apresentacao div:hover {
+    transition: 1s;
+    color:#a074c4;
+    /* color: rgba(0, 0, 100, 1); */
+    /* background-color: #ccc; */
+    /* border-color: #000; */
+    box-shadow:#000 8px 8px 5px;
+}
+
+.btn_setaProximo {
+    /* border: 1px solid red; */
+    margin-top: -220px;
+    margin-bottom: 200px;
+}
+
+.certificados_pastas {
+    min-height: 500px;
+}
+
+.galeria_certificados {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria_certificados li {
+    list-style: none;
+    border: 2px solid #fff;
+    width: 200px;
+    min-height: 120px;
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+#certificado_cursos li:hover {
+    background-size: 100%;
+}
+
+#certificado_treinamentos li:hover {
+    background-size: 100%;
+}
+
+#certificado_academicos li:hover {
+    background-size: 100%;
+}
+
+.certificado_esquerda:hover {
+    transform: translateX(100%) translateY(10%) scale(3);
+    transition-duration: 0.5s;
+}
+
+.certificado_centro:hover {
+    transform: translate(0%) translateY(30%) scale(3);
+    transition-duration: 0.5s;
+    background-size: 0%;
+}
+
+.certificado_direita:hover {
+    transform: translate(-100%) translateY(30%) scale(3);
+    transition-duration: 0.5s;
+}
+
+.galeria_certificados span {
+    /* border: 1px solid hotpink; */
+    padding: 1px;
+    background-color:  rgba(0,0,0,.3);
+}
+
+/* Certificados dos cursos */
+#certificado_01 {
+    background-image: url(../img/certificados/01_ce.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_02 {
+    background-image: url(../img/certificados/02_te.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_03 {
+    background-image: url(../img/certificados/03_db.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_04 {
+    background-image: url(../img/certificados/04_db.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_05 {
+    background-image: url(../img/certificados/05_db.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_06 {
+    background-image: url(../img/certificados/06_db.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_07 {
+    background-image: url(../img/certificados/07_db.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_08 {
+    background-image: url(../img/certificados/08_se.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_09 {
+    background-image: url(../img/certificados/09_ce.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_10 {
+    background-image: url(../img/certificados/10_fb.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_11 {
+    background-image: url(../img/certificados/11_cv.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_12 {
+    background-image: url(../img/certificados/12_cv.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_13 {
+    background-image: url(../img/certificados/13_im.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_14 {
+    background-image: url(../img/certificados/14_im.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_15 {
+    background-image: url(../img/certificados/15_im.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_16 {
+    background-image: url(../img/certificados/16_se.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_17 {
+    background-image: url(../img/certificados/17_ud.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_18 {
+    background-image: url(../img/certificados/18_ud.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_19 {
+    background-image: url(../img/certificados/19_ud.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_20 {
+    background-image: url(../img/certificados/20_ud.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_21 {
+    background-image: url(../img/certificados/21_ud.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_22 {
+    background-image: url(../img/certificados/22_ud.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_23 {
+    background-image: url(../img/certificados/23_lk.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_24 {
+    background-image: url(../img/certificados/24_cv.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_25 {
+    background-image: url(../img/certificados/25_cv.png);
+    background-repeat: no-repeat;
+    background-size: 200%;  
+    background-position: center;
+}
+
+#certificado_26 {
+    background-image: url(../img/certificados/26_cv.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+
+/* Certificados de Eventos */
+#certificado_ev01 {
+    background-image: url(../img/certificados/ev_01_un.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_ev02 {
+    background-image: url(../img/certificados/ev_02_go.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_ev03 {
+    background-image: url(../img/certificados/ev_03_fi.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_tr01 {
+    background-image: url(../img/certificados/tr_01_no.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_tr02 {
+    background-image: url(../img/certificados/tr_02ef.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_tr03 {
+    background-image: url(../img/certificados/tr_03ef.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+/* Certificados de Ensino Superior */
+#certificado_su01 {
+    background-image: url(../img/certificados/su_01_un.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_su02 {
+    background-image: url(../img/certificados/su_02_fm.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+#certificado_su03 {
+    background-image: url(../img/certificados/su_03_im.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+h3 {
+    margin: 50px 0px 10px 20px;
+    color: #a074c4;
+}
+
+div hr {
+    border-color: #a074c4;
+    margin-bottom: 60px;
+}
