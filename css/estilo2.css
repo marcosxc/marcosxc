@@ -1,0 +1,226 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 1280px;
+    margin: auto;    
+    background-color: #171615;
+    color: #9aadb8;
+}
+
+nav {
+    font-family: 'Orbitron', 'sans-serif';
+}
+
+.menu {
+    list-style: none;
+    float: left;    
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-left: 1px solid #a074c4;
+}
+
+.menu li a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #a074c4;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu li ul {
+    padding-left: 0px;
+    position: absolute;
+    left: -1px;
+    background-color: #171615;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.menu li:hover ul {
+    visibility: visible;
+    opacity: 100;    
+}
+
+/* #retorno img {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    
+} */
+
+#retorno img {
+    float: right;
+    position: sticky;
+    top: 300px;
+    bottom: 30px;
+    right: 20px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+header {
+    background: radial-gradient(gray, teal);
+    background-image: url("../img/capa.jpg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    height: 250px;
+    color: white;
+    animation: capa 1s linear;
+    border-top: 60px solid #171615;
+}
+
+header span:first-child {
+    /* border: 4px solid white; */
+    /* border-radius: 40px 0px 40px 0px; */
+    padding: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0px;
+    margin-left: 30px;
+    margin-top: -60px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nome {
+    font-size: 2.3em;
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+#profissao {
+    font-size: 1.1em;
+    margin-left: 30px;
+    margin-top: 0px;
+    padding-right: 10px;
+}
+
+#fotoPerfil {
+    background-image: url("../img/perfil.jpg");
+    background-size: 200px;
+    background-position-x: center;
+    background-position-y: center;
+    border: 5px solid silver;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: -160px;
+    animation: perfil 1s, border 1s linear;  
+}
+
+#fotoPerfil:hover {
+    transform: rotateY(180deg);
+    transition: 2s;
+    background-image: url("../img/perfil.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    /* border-color: whitesmoke; */
+    border-color: transparent;
+}
+
+#redesSociais {
+    display: flex;
+    justify-content: flex-end;
+    width: 230px;
+    padding: 5px;
+    margin-top: -55px;
+    margin-left: 1000px;
+}
+
+#redesSociais img {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
+    animation: redesSociais 1s linear;
+}
+
+#redesSociais img:hover {
+    border-radius: 50%;
+    transition: 0.2s;
+    margin-top: 0px;
+    border: 1px solid gray;
+}
+
+footer {
+    background-color: #283643;
+    padding-bottom: 10px;
+}
+
+footer p {
+    margin: 0px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #7992a7;
+}
+
+article {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+body article h3 {
+    color: #a074c4;
+    /* background-image: linear-gradient(to right, #151819, rgba(0, 30.2, 57.3 ), #283643, #283643) ;     */
+    background-image: linear-gradient(to left, #151819, rgba(0, 30.2, 57.3 ), #283643, #283643) ;    
+    display: flex;
+    align-items: center;
+    animation: subTituloFundo 1s linear;
+}
+
+body article h3 img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    margin-right: 15px;
+    animation: subTitulo 0.3s linear;
+}
+
+@keyframes capa {
+    from {margin-bottom: 600px; height: 0px;}
+    to {margin-bottom: 0px; height: 250px;}
+}
+
+@keyframes perfil {
+    from {height: 0px; width: 0px}
+    to {height: 200px; width: 200px;}
+}
+
+@keyframes redesSociais {
+    from {height: 0px; width: 0px;}
+    to {height: 40px; width: 40px;}
+}
+
+@keyframes subTituloFundo {
+    from {margin-right: 980px;}
+    to {margin-right: 0px}
+}
+
+
+/* @keyframes subTitulo {
+    from {width: 0px; height: 0px;}
+    to {width: 30px; height: 30px;}
+} */

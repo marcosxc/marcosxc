@@ -1,0 +1,55 @@
+article:nth-child(odd) {
+    background-color: #ccc;
+    color: black;
+}
+
+article {
+    padding: 20px;
+    min-height: 96%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+article hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: #a074c4;
+}
+
+article p {
+    line-height: 1.5em;
+}
+
+.cabecalho_estudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho_estudo h4 {
+    font-size: 1.5em;
+}
+
+.cabecalho_estudo img {
+    width: 250px;
+}
+
+#materal_tcc_titulo {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#material_tcc_link{
+    display: flex;
+    justify-content: space-around;
+}
+
+#material_tcc_link img {
+    width: 20px;
+}
+
+#iframe {
+    display: flex;
+    justify-content: center;
+}

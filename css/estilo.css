@@ -1,148 +1,386 @@
 * {
-    font-family: Arial, Helvetica, sans-serif
+    margin: 0px;
+    padding: 0px;
 }
 
-body {
+html {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fafafa;
+}
+
+body{
     width: 1280px;
     margin: auto;
+    background-color: rgba(23, 27, 38, 1);
 }
 
-header {
-    background: radial-gradient(gray, teal);
-    background-image: url("../img/capa.jpg");
+#principal {
+    background-image: url(../img/capa.jpg);
     background-repeat: no-repeat;
-    background-position-y: center;
     background-position-x: center;
-    height: 250px;
+    background-position-y: top;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Menu e Navegação*/
+nav { 
+    /* font-family: 'Orbitron', 'sans-serif'; */
+    position: fixed;
+    float: left;
+    top: 1px;
+    z-index: 999;
+}
+
+.menu {
+    list-style: none;
+    position: relative;
+    float: left;
+    display: block;
+    justify-content: space-between;
+}
+
+.menu li{
+    list-style: none;
+    position: relative;
+    float: left;
+    width: 256px;
+    background-color: rgba(51, 51, 51, 0.9);
+}
+
+.menu li a {
+    color: #a074c4;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: rgba(40, 40, 40, 1);
     color: white;
-    animation: capa 1s linear;
 }
 
-header span:first-child {
-    /* border: 4px solid white; */
-    /* border-radius: 40px 0px 40px 0px; */
-    padding: 0px;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin: 0px;
-    margin-left: 30px;
-    margin-top: -60px;
-    height: 60px;
+.menu li ul {
+    width: 256px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.6s linear;
 }
 
-#nome {
-    font-size: 2.1em;
-    margin-top: 80px;
-    margin-left: 30px;
-    margin-bottom: 0px;
+.menu li:hover ul {
+    visibility: visible;
+    opacity: 100;
 }
 
-#profissao {
-    font-size: 1.1em;
-    margin-left: 30px;
-    margin-top: 0px;
-    padding-right: 10px;
-}
-
-#fotoPerfil {
-    background-image: url("../img/perfil-pequeno.jpg");
-    background-size: 200px;
-    background-position-x: center;
-    background-position-y: center;
-    border: 5px solid silver;
+#btn_retornoTopo {
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    margin-top: -160px;
-    animation: perfil 1s linear;  
+    background-color: #a074c4;
+    transition: 1s;
 }
 
-#fotoPerfil:hover {
-    transform: rotateY(180deg);
-    transition: 2s;
-    background-image: url("../img/perfil-pequeno-dois.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 200px;
-    border-color: whitesmoke;  
+#btn_retornoTopo:hover {
+    background-color: #f0f0f0;
+}
+
+#btn_retornoTopo img{
+    width: 50px;
+}
+
+/* Botão (Seta) Próxima sessão */
+.btn_setaProximo {
+    width: 50px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_setaProximo a {
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #844cb3;
+    animation: setaProximo 1s linear 1s infinite alternate;
+}
+
+@keyframes setaProximo {
+    from {margin-top: 0px}
+    to {margin-top: -20px; color: #a074c4}
+}
+
+.btn_lerMais {
+    display: block;
+    width: 200px;
+    margin: 40px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #a074c4;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+
+}
+
+.btn_lerMais:hover {
+    box-shadow: 3px 3px 3px #844cb3;
+    color: #ccc;
+    transform: scale(1.02);
+}
+
+/* Cabeçalho da página (Apresentação inicial) */
+#principal header {
+    /* font-family: 'Orbitron', 'sans-serif'; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+}
+
+#principal header p{
+    font-size: 2em;
+}
+
+#construcao {
+    position: absolute;
+    top: 25px;
 }
 
 #redesSociais {
     display: flex;
-    justify-content: flex-end;
-    width: 230px;
-    padding: 5px;
-    margin-top: -55px;
-    margin-left: 1000px;
+    flex-direction: column;
+    justify-items: center;
+    width: 55px;
 }
 
-#redesSociais img {
-    width: 40px;
-    height: 40px;
-    margin: 2px;
-    border: 1px solid rgba(0, 0, 0, 0.01);
+#redesSociais a {
+    margin: 10px 0px 10px 0px;
+}
+
+#redesSociais a:hover {
+    transform: scale(1.1)
+}
+
+#redesSociais img{
+    justify-content: center;
+    width: 50px;
+}
+
+#fotoPerfil img{
+    width: 300px;
+    height: 300px;
+}
+
+/* Assuntos principais */
+main {
+    background-color: #020113;
+}
+
+/* Quem sou eu e meu interesse por tecnologia */
+#quemSouEu {
+    height: 98vh;
+    background-color: #cccccc;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#quemSouEu div {
+    width: 700px;
+    margin: 70px;
+}
+
+#quemSouEu h3, #quemSouEu p{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    line-height: 25px;
+    text-align: justify;
+}
+
+#quemSouEu img {
+    width: 300px;
+    height: 146px;
+    margin-right: 60px;
+}
+
+#setaQuemSouEu {
+    margin-top: -80px;
+}
+
+/* Empregos Anteriores */
+#empregos {
+    height: 98vh;
+}
+
+#empregos h3 {
+    width: 600px;
+    margin: 60px auto;
+    margin-bottom: 50px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#setaEmprego {
+    margin-top: -40px;
+}
+
+/* Disposição em Formato de Vitral */
+.vitral {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vitral div {
+    width: 260px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color:rgba(40, 40, 40, 1);
     border-radius: 10px;
-    animation: redesSociais 1s linear;
 }
 
-#redesSociais img:hover {
+.vitral div img {
+    width: 150px;
     border-radius: 50%;
-    transition: 0.2s;
-    margin-top: 0px;
-    border: 1px solid gray;
+    margin: 20px;
 }
 
+.vitral div p {
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.vitral hr {
+    width: 200px;
+}
+
+/* Evolução constante */
+#evolucao {
+    height: 98vh;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+
+#evolucao div {
+    width: 600px;
+    text-align: justify;    
+}
+
+#evolucao h3 {
+    font-size: 1.2em;
+    text-align: center;
+    font-style: italic;
+}
+
+#evolucao cite {
+    display: block;
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+#evolucao img {
+    width: 500px;
+}
+
+#evolucao p {
+    line-height: 1.5em;
+}
+
+#setaEvolucao {
+    margin-top: -60px;
+}
+
+/* Evolução constante */
+#estudos {
+    height: 98vh;
+    padding-top: 40px;
+}
+
+#estudos h3 {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#estudos cite {
+    width: 500px;
+    margin: auto;
+    display: block;
+    text-align: right;
+}
+
+#estudos .vitral {
+    margin-top: 50px;
+}
+
+#setaEstudos {
+    margin-top: -70px;
+}
+
+/* Certificados */
+#certificado {
+    height: 98vh;
+    background-color: #ccc;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+#certificado img {
+    width: 450px;
+    margin-top: -150px;
+}
+
+#certificado div {
+    
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+#certificado h3 {
+    margin: auto;
+}
+
+#certificado cite {
+    display: block;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+#certificado p {
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+#certificado .btn_lerMais {
+    width: 300px;
+}
+
+/* Rodapé */
 footer {
-    background-color: #283643;
-    padding-bottom: 10px;
+    height: 80px;
+    background-color: black;
+}
+
+footer hr {
+    border-color: white;
+    width: auto;
 }
 
 footer p {
-    margin: 0px;
     text-align: center;
-    font-size: 0.8em;
-    color: #7992a7;
+    margin-top: 20px;
 }
-
-body article h3 {
-    color: #293744;
-    background-image: linear-gradient(to left,  rgba(244, 246, 248, 0.404), #668dac49, #fff) ;    
-    display: flex;
-    align-items: center;
-    animation: subTituloFundo 1s linear;
-}
-
-body article h3 img {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    margin-right: 15px;
-    animation: subTitulo 0.3s linear;
-}
-
-@keyframes capa {
-    from {margin-bottom: 600px; height: 0px;}
-    to {margin-bottom: 0px; height: 250px;}
-}
-
-@keyframes perfil {
-    from {height: 0px; width: 0px}
-    to {height: 200px; width: 200px;}
-}
-
-@keyframes redesSociais {
-    from {height: 0px; width: 0px;}
-    to {height: 40px; width: 40px;}
-}
-
-@keyframes subTituloFundo {
-    from {margin-right: 980px;}
-    to {margin-right: 0px}
-}
-
-
-/* @keyframes subTitulo {
-    from {width: 0px; height: 0px;}
-    to {width: 30px; height: 30px;}
-} */

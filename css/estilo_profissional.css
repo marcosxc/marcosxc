@@ -1,0 +1,79 @@
+/* PÁGINA PROFISSIONAL */
+
+article {
+    padding-top: 2em;
+    padding-bottom: 20px;
+    min-height: 96vh;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+article h4 {
+    text-align: center;
+    margin: 20px 0px 40px 0px;
+}
+
+article p {
+    margin: 0px 40px 0px 40px;
+}
+
+.com_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.com_img h4, .com_img p {
+    width: 750px;
+}
+
+article:nth-child(even) {
+    background-color: #ccc;
+    color: black;
+}
+
+#profissao p, #profissao h4 {
+    width: 1200px;
+    margin: auto;
+}
+
+#profissao div {
+    display: flex;
+    align-items: center;
+}
+
+#profissao img {
+    margin: 16vh 50px 0px 250px;
+}
+
+#profissao h3 {
+    margin-top: 35vh;
+    font-size: 2em;
+    color: gray;
+}
+
+#profissao p{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+    color: #c9c9c9cc;
+    width: 650px;
+    margin-top: 20vh;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    line-height: 1.6em;
+}
+
+
+
+#profissao_uni_art ul {
+    list-style-position: inside;
+    width: 750px;
+    margin-left: 40px;
+}
+
+#profissao_uni_art li {
+    margin-top: 10px;
+}
+
+

@@ -1,0 +1,21 @@
+img {
+    width: 1280px;
+}
+
+article {
+    background-color: #020113;
+    height: 50vh;
+    text-align: justify;
+    padding: 40px;
+    margin: 0px;
+    line-height: 1.5em;
+}
+
+hr {
+    border: 1px solid #a074c4;
+    margin: 10px 0;
+}
+
+footer {
+    margin: -10px 0px;
+}

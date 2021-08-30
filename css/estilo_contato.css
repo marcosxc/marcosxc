@@ -1,0 +1,43 @@
+img {
+    width: 1280px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3em;
+    padding: 20px 0;
+}
+
+div p {
+    width: 800px;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.4em;
+}
+
+span {
+    width: 1280px;
+    padding: 100px 0 0 0 ;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+span img {
+    width: 50px;
+}
+
+span img:hover {
+    transform: scale(1.2);
+}
+
+hr {
+    border: 1px solid #a074c4;
+}
+
+div {
+    background-color: #020113;
+    height: 55vh;
+    margin: -10px 0 0 0;
+}
